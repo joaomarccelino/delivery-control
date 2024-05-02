@@ -1,17 +1,21 @@
 import './style.css';
 
-const DeliveryCard = ({deliveryPlace, deliveryStatus}) => {
+const DeliveryCard = ({ deliveryPlace, deliveryStatus }) => {
 
   const cardColor = () => {
     switch (deliveryStatus) {
-      case 1:
-        return 'success'
-      case 2:
-        return 'almost-success'
-      case 3:
-        return 'warning'
-      case 4: 
+      case 0:
         return 'not-success'
+      case 1:
+        return 'almost-success'
+      case 2:
+        return 'warning'
+      case 3:
+        return 'not-success'
+      case 4:
+        return 'almost-succes'
+      case 5:
+        return 'success'
       default:
         break;
     }
@@ -19,14 +23,18 @@ const DeliveryCard = ({deliveryPlace, deliveryStatus}) => {
 
   const status = () => {
     switch (deliveryStatus) {
-      case 1:
-        return 'Conferido'
-      case 2:
-        return 'Entrega Parcial'
-      case 3:
-        return 'Entregue'
-      case 4: 
+      case 0:
         return 'Não Entregue'
+      case 1:
+        return 'Entrega Parcial'
+      case 2:
+        return 'Aguardando Análise'
+      case 3:
+        return 'Devolvido'
+      case 4:
+        return 'Devolvido Parcial'
+      case 5:
+        return 'Conferido'
       default:
         break;
     }

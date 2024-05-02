@@ -11,19 +11,19 @@ import api from './services/api'
 function App() {
   const [locais, setLocais] = useState([]);
 
-  useEffect(() => {
-    api.post("https://prefplus.com/api_rec_humanos/api/dashboard/APIObterLocais.php", {
-      token: '4E9E3C19EB1C474054FC45DF4CC1EAB24AAC48162B40FE6A18F9C96C5DE2576DBEC1D494E75ACE4BA14FFD8EE8A9A82ADCCE6F9A885D35D5E48C389604302AAD',
-      ano: 2024,
-      mes: 4,
-      empresa_id: 1
-    }).then((response) => console.log(response.data))
-      .catch((err) => {
-        console.error("ops! ocorreu um erro" + err);
-      });
-  }, [])
+  // useEffect(() => {
+  //   api.post("https://prefplus.com/api_rec_humanos/api/dashboard/APIObterLocais.php", {
+  //     token: '4E9E3C19EB1C474054FC45DF4CC1EAB24AAC48162B40FE6A18F9C96C5DE2576DBEC1D494E75ACE4BA14FFD8EE8A9A82ADCCE6F9A885D35D5E48C389604302AAD',
+  //     ano:2024,
+  //     mes:4,
+  //     empresa_id: 1
+  //   }).then((response) => console.log(response.data))
+  //     .catch((err) => {
+  //       console.error("ops! ocorreu um erro" + err);
+  //     });
+  // }, [])
 
-
+  
 
   const [isModalOpen, setIsModalOpen] = useState(false);
 
