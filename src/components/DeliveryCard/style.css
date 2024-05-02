@@ -1,0 +1,35 @@
+.delivery-card {
+  padding: 36px 24px;
+  border-radius: 20px;
+}
+
+.delivery-place {
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: bold;
+  color: var(--g11);
+  margin-bottom: 20px;
+}
+
+.delivery-status {
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--g12);
+}
+
+.delivery-card.success {
+  background-color: var(--gre);
+}
+
+.delivery-card.almost-success {
+  background-color: var(--ora);
+}
+
+.delivery-card.warning {
+  background-color: var(--yel);
+}
+
+.delivery-card.not-success {
+  background-color: var(--red);
+}

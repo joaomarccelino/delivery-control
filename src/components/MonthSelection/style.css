@@ -1,0 +1,25 @@
+.month-selection-bg {
+  background-color: var(--p2);
+  margin-bottom: 20px;
+}
+.month-selection {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 0px;
+}
+
+.month {
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.icon-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.icon-btn:hover {
+  opacity: 0.6;
+}

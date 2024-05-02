@@ -1,0 +1,9 @@
+.header {
+  background-color: var(--p1);
+  padding: 20px;
+}
+
+.header h1 {
+  text-align: center;
+  color: var(--g2);
+}
