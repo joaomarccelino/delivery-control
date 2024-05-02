@@ -13,7 +13,7 @@ const DeliveryCard = ({ deliveryPlace, deliveryStatus }) => {
       case 3:
         return 'not-success'
       case 4:
-        return 'almost-succes'
+        return 'almost-success'
       case 5:
         return 'success'
       default:

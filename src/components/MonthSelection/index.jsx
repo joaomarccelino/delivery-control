@@ -2,6 +2,10 @@ import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 import './style.css';
 
 const MonthSelection = ({ month }) => {
+  const months = [
+    'Janeiro', 'Fevereiro', 'Março', 'Abril', 'Maio', 'Junho',
+    'Julho', 'Agosto', 'Setembro', 'Outubro', 'Novembro', 'Dezembro'
+  ];
   return (
     <div className="month-selection-bg">
       <div className="month-selection container">
@@ -9,7 +13,7 @@ const MonthSelection = ({ month }) => {
           <IoIosArrowBack size={32} />
         </button>
         <span className="month">
-          {month}
+          {months[month-1]}
         </span>
         <button className="icon-btn">
           <IoIosArrowForward size={32} />
