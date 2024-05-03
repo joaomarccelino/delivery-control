@@ -7,9 +7,9 @@ const Home = ({locals}) => {
    return (
     <div className="container">
       <div className="delivery-cards">
-        {locals?.map((item) => {
+        {locals && locals?.map((item, index) => {
           return (
-            <DeliveryCard deliveryPlace={item.descricao} deliveryStatus={item.resultado} />
+            <DeliveryCard key={index} deliveryPlace={item.descricao} deliveryStatus={item.resultado} />
           )
         })}
       </div>
